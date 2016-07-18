@@ -5,6 +5,8 @@ from bson import ObjectId
 from . import context
 from . import job as jobmodule
 
+context.set_current_config(context.get_config())
+
 
 class Queue(object):
     """ A Queue for Jobs. """
